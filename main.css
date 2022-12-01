@@ -1,0 +1,37 @@
+/*
+Nitro upsell remover
+Based on a snippet i found on the vencord server
+*/
+
+[class^="channel-"] > div > [href="/store"], /* Nitro Button above DM List */
+[class^="channelTextArea"] [class^="buttons-"] > button, /* Gift Button */
+[class^="upsellVisible-"], /* Banner Nitro Upsell Header in the user modal */
+[class^="premiumIconWrapper"], /* Nitro Icon in top right on Banners */
+[class^="characterCount-"] [class*="upsell-"], /* "Send longer Messages with Discord Nitro!" */
+[class^="emojiSection-"] [class*="shinyButton-"], /* "Get Nitro" button in Emoji/Sticker modal" */
+[class*="tryItOutSection-"], /*try nitro banner section on profile editor*/
+[class^="customizationSection-"] + [class^="upsellContainer-"], /* Per server profile customizations*/
+[class^="customizationSection-"][class*="disabled-"], /* Per server profile customizations*/
+[class*="bannerNitroUpsell-"], /* "Unlock Banner" in profile editor*/
+[class^="imageUploaderHint-"], /* Remove gif option from profile pic upload option*/
+[class^="imagePickerContainer-"] > [class^="optionBox-"]:nth-child(2) /* Remove gif option from profile pic upload option*/
+{
+    display: none !important;
+}
+
+/*Extra stuff i added*/
+/*Settings*/
+[class^="premiumTab-"], /*remove nitro tab*/
+[class^="premiumTab-"] + [class^="item-"], /*Server boost tab*/
+[class^="premiumTab-"] + [class^="item-"] + [class^="item-"] /*server boost tab*/
+{
+	display: none !important;
+}
+
+/*Settings context menu*/
+#user-settings-cog-Discord_Nitro,
+#user-settings-cog-Nitro_Server_Boost,
+#user-settings-cog-Subscriptions
+{
+	display: none !important;
+}

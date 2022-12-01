@@ -1,0 +1,15 @@
+/*Remove profile themes*/
+[class*="profileColors-"]{
+    --profile-gradient-primary-color: var(--background-secondary-alt) !important;
+    --profile-gradient-secondary-color: var(--background-secondary-alt) !important;
+    --profile-gradient-overlay-color: transparent  !important;
+    --profile-gradient-button-color: var(--button-secondary-background) !important;
+    --profile-avatar-border-color: var(--background-secondary-alt) !important;
+    --profile-message-input-border-color: var(--background-modifier-accent) !important;
+    --profile-body-background-color: var(--background-floating) !important;
+    --profile-body-background-hover: var(--background-modifier-hover) !important;
+    --profile-body-divider-color: var(--background-modifier-accent) !important;
+    --profile-role-pill-background-color: var(--background-secondary-alt) !important;
+    --profile-role-pill-border-color: var(--interactive-normal) !important;
+    --account-profile-popout-menu-hover: var(--brand-experiment-560) !important;
+}
