@@ -1,11 +1,3 @@
-
-
-/*Remove text from emoji info popup*/
-[class*="popoutContainer-"]>[class*="emojiSection-"]>div>img[data-type="emoji"]+div[class*="flex-"] > div[class*="defaultColor-"]:nth-child(2),
-[class*="popoutContainer-"]>[class*="emojiSection-"]>div>div[class=""]+div[class*="flex-"] > div[class*="defaultColor-"]:nth-child(2){
-	display: none;
-}
-
 /*Change "nitro required" message to "Emoji plugin is needed to send custom emoji" when trying to send custom emoji*/
 #emoji-picker-tab-panel >[class*="emojiPicker-"]> [class^="premiumPromo-"]::after{
 	content: "Emoji plugin is needed to send custom emoji";
