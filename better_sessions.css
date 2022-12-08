@@ -1,0 +1,46 @@
+[class*="session-"]{
+	background-color: var(--background-secondary);
+    border-radius: 8px;
+    padding: 12px 16px;
+    padding-left: 12px;
+    border-bottom: none;
+    margin-top: 16px;
+    margin-right: 16px;
+    gap: 12px;
+    width: 350px;
+    position: relative;
+    display: flex;
+    align-content: flex-start;
+    align-items: stretch;
+}
+
+[class*="sessions-"] > [class*="children-"]{
+	display:flex;
+	flex-wrap: wrap;
+    flex-direction: row;
+}
+
+[class*="sessionIcon-"] {
+	position: absolute;
+    color: var(--interactive-normal);
+    background: transparent;
+
+	height: 1rem;
+	width: 1rem;
+	padding: 0px;
+
+	top:12px;
+}
+
+[class*="sessionInfo-"]{
+	
+}
+
+[class*="sessionInfo-"] > div:nth-child(1)::before{
+	content:"";
+	padding-left:1rem;
+}
+
+[class*="sessionIcon-"] > svg{
+	height: 1rem;
+}
