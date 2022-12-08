@@ -1,0 +1,6 @@
+/* Remove avatar decoration */
+[class*="avatarDecoration-"],
+[class*="avatarDecorationHint-"],
+[class*="bannerSVGWrapper-"] > mask > :not(circle):not(rect){
+	display: none !important;
+}
