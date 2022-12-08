@@ -15,9 +15,10 @@
 }
 
 [class*="sessions-"] > [class*="children-"]{
-	display:flex;
+	display: flex;
 	flex-wrap: wrap;
     flex-direction: row;
+    width: 120%;
 }
 
 [class*="sessionIcon-"] {
