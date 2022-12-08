@@ -14,7 +14,7 @@
     align-items: stretch;
 }
 
-[class*="sessions-"] > [class*="children-"]{
+[class*="sessions-"] > div > [class*="children-"]{
 	display: flex;
 	flex-wrap: wrap;
     flex-direction: row;
