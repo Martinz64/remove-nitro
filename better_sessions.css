@@ -1,4 +1,6 @@
+/*Better sessions*/
 [class*="session-"]{
+	--icon-size: 1rem;
 	background-color: var(--background-secondary);
     border-radius: 8px;
     padding: 12px 16px;
@@ -26,16 +28,56 @@
     color: var(--interactive-normal);
     background: transparent;
 
-	height: 1rem;
-	width: 1rem;
+	height: var(--icon-size);
+	width: var(--icon-size);
 	padding: 0px;
 
 	top:12px;
 }
 
-[class*="sessionInfo-"]{
-	
+/*Location icon*/
+[class*="sessionInfo-"] > :last-child > span:nth-child(1){
+	display: flex;
+	gap: 4px;
 }
+
+[class*="sessionInfo-"] > :last-child > span:nth-child(1)::before{
+	content:"";
+	height: var(--icon-size);
+	width: var(--icon-size);
+	/*padding-left:var(--icon-size);*/
+	background-color: var(--interactive-normal);
+	-webkit-mask-image: url(https://martinz64.github.io/remove-nitro/icons/location.svg);
+	mask-image: url(https://martinz64.github.io/remove-nitro/icons/location.svg);
+}
+
+/*Time icon*/
+[class*="sessionInfo-"] > :last-child > span:last-child:not(:only-child){
+	display: flex;
+	gap: 4px;
+}
+
+[class*="sessionInfo-"] > :last-child > span:last-child:not(:only-child)::before{
+	content:"";
+	height: var(--icon-size);
+	width: var(--icon-size);
+	/*padding-left:var(--icon-size);*/
+	background-color: var(--interactive-normal);
+	-webkit-mask-image: url(https://martinz64.github.io/remove-nitro/icons/clock.svg);
+	mask-image: url(https://martinz64.github.io/remove-nitro/icons/clock.svg);
+}
+
+/*Hide middle dot*/
+[class*="sessionInfo-"] > :last-child > span:not(:last-child):not(:first-child){
+	display: none;
+}
+
+[class*="sessionInfo-"] > :last-child{
+	display: flex;
+	flex-direction: column;
+}
+
+
 
 [class*="sessionInfo-"] > div:nth-child(1)::before{
 	content:"";
@@ -43,5 +85,5 @@
 }
 
 [class*="sessionIcon-"] > svg{
-	height: 1rem;
+	height:  var(--icon-size);
 }
