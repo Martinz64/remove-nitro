@@ -35,3 +35,16 @@ Based on a snippet i found on the vencord server
 {
 	display: none !important;
 }
+
+
+/*credit to CodeF53 for this part*/
+/*Remove snowsgiving banner*/
+[class^=userPopoutInner] > [class^=wrapper] > [class^=banner] {
+	display: none;
+}
+
+
+/* Avatar decoration nitro promo in profiles */
+[class^=limitedFeatureBorder] {
+	display: none;
+}
