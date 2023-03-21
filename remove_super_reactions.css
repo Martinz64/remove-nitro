@@ -1,0 +1,8 @@
+/*Remove super reactions*/
+[class*=reaction-][style*="opacity: 1; background:"],
+#message-add-reaction-1,
+[class*=burstEmojiSection-],
+[class*=burstEmojiSection-] + div,
+[class*=reactionSelected-][style*="background:"]{
+    display: none;
+}
