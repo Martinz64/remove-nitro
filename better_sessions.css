@@ -89,14 +89,14 @@
 }
 
 /*Fix cross icon being too big*/
-[class*="session-"] [aria-label="Log Out of Device"] {
+[class*="session-"] [class*="sessionMoreButton-"] {
     width: 18px;
     height: 18px;
     overflow: hidden;
     transform: translateX(4px);
 }
 
-[class*="session-"] [aria-label="Log Out of Device"] svg {
+[class*="session-"] [class*="sessionMoreButton-"] svg {
     width: 18px;
     height: 18px;
     overflow: hidden;
