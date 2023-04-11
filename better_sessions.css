@@ -87,3 +87,17 @@
 [class*="sessionIcon-"] > svg{
 	height:  var(--icon-size);
 }
+
+/*Fix cross icon being too big*/
+[class*="session-"] [aria-label="Log Out of Device"] {
+    width: 18px;
+    height: 18px;
+    overflow: hidden;
+    transform: translateX(4px);
+}
+
+[class*="session-"] [aria-label="Log Out of Device"] svg {
+    width: 18px;
+    height: 18px;
+    overflow: hidden;
+}
