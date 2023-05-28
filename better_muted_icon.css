@@ -1,0 +1,18 @@
+[class*=muted-] [class*=avatar-]{
+    opacity: 1;
+}
+[class*=muted-][class*=layout-]{
+    color:unset;
+}
+[class*=muted-][class*=layout-]:before{
+    content: "";
+    height: 1rem;
+    width: 1rem;
+    background-color: var(--interactive-normal);
+    position: absolute;
+    right: 1rem;
+    -webkit-mask-image: url(https://martinz64.github.io/remove-nitro/icons/muted.svg);
+    mask-image: url(https://martinz64.github.io/remove-nitro/icons/muted.svg);
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+}
