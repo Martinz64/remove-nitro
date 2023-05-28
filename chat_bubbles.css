@@ -1,0 +1,46 @@
+/*Chat bubbles*/
+/*[class*=message-] [class*=contents-]*/
+[class*=message-] [class*=contents-]{
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+}
+
+/*[class*=message-] [class*=contents-] [class^=header-],*/
+[id^=message-username-],
+[id^=message-content-]{
+    /*border: 2px solid;*/
+    padding: .5rem;
+    width: fit-content;
+    /*background: var(--background-secondary);*/
+    background-color: rgba(0,0,0,0.25);
+    border-radius: 4px;
+    box-shadow: 0px 2px 0px rgba(0,0,0,0.5);
+}
+
+[id^=message-content-]{
+    padding-left: .5rem !important;
+    margin:0px !important;
+    /*margin-left: 72px !important;*/
+    position: unset;
+}
+
+[class*=message-]{
+    position: relative;
+}
+
+[class*=message-] [class*=avatar-]{
+    border-radius: 4px !important;
+    /*box-shadow: 0px 2px 4px rgba(0,0,0,0.5);*/
+    box-shadow: 0px 2px 0px rgba(0,0,0,0.5);
+
+    left:calc(72px - 48px - .5rem);
+    top: .5rem;
+    background-color: rgba(0,0,0,0.5);
+    /*background: var(--background-secondary);*/
+}
+
+[class*=channelTextArea-] > [class*=scrollableContainer-]{
+    border-radius: 4px !important;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.5);
+}
