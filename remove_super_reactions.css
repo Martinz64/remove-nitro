@@ -4,11 +4,13 @@ section:has([class^=navList] #reaction-picker-tab) > nav,
 [id^=message-reactions-] div[aria-label]:has([class*=reactionBtn] path[d*="M20.3397 14.2379C21.2318 14.4731 22.1292 14.5474 23 14.4789C22.9906 14.5151 22.9809 14.5514 22.9711 14.5876C21.5194 19.9201 15.9496 23.086 10.5309 21.6569C10.3451 21.6079 10.1619 21.5542 9.98145 21.4958C7.94618 20.8378 5.90941 20 3.77041 20H3.5C2.67157 20 2 19.3284 2 18.5C2 17.6716 2.67157 17 3.5 17C4.75918 17 3.9661 15.8584 3.47514 14.7655C3.28101 14.3334 2.86615 14 2.39244 14H1.5C0.671573 14 0 13.3284 0 12.5C0 11.6716 0.671573 11 1.5 11V11C"]),
 [id^=message-reactions-] > div:has([class*=reaction-][style]:not([style="opacity: 1;"])),
 [class*=reactionDefault][style],
+[class*=reactionDefault]:has([class*=defaultColor][style]),
 [class*=reactionSelected][style],
 [class^=burstEmojiSection-],
 [class^=burstEmojiSection-] + div,
 div[aria-label]:has([class*=addReactButton] path[d*="M20.3397 14.2379C21.2318 14.4731 22.1292 14.5474 23 14.4789C22.9906 14.5151 22.9809 14.5514 22.9711 14.5876C21.5194 19.9201 15.9496 23.086 10.5309 21.6569C10.3451 21.6079 10.1619 21.5542 9.98145 21.4958C7.94618 20.8378 5.90941 20 3.77041 20H3.5C2.67157 20 2 19.3284 2 18.5C2 17.6716 2.67157 17 3.5 17C4.75918 17 3.9661 15.8584 3.47514 14.7655C3.28101 14.3334 2.86615 14 2.39244 14H1.5C0.671573 14 0 13.3284 0 12.5C0 11.6716 0.671573 11 1.5 11V11C"]),
-#message-add-reaction-1{
+#message-add-reaction-1,
+#message-actions-add-reaction-1{
     display:none;
 }
 
