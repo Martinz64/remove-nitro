@@ -1,0 +1,242 @@
+/*
+==============================
+== Better touchscreen menus ==
+==============================*/
+
+[role="menu"]#message [class*=scroller] [role=group]:nth-child(2){
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+[role="menu"]#message [class*=scroller] [role=group]:nth-child(2) > div{
+    grid-column: 1 / 5;
+}
+:is(#message-add-reaction-0, #message-edit, #message-copy-text, #message-reply) [class*=label]{
+    display: none;
+}
+
+/*positioning stuff*/
+[role="menu"]#message [class*=scroller] [role=group]:nth-child(2) > div:has(#message-add-reaction-0){
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+#message-edit{
+    grid-column: 2!important;
+    grid-row: 1;
+}
+#message-reply{
+    grid-column: 1!important;
+    grid-row: 1;
+}
+#message-copy-text{
+    grid-column: 4!important;
+    grid-row: 1;
+}
+
+#message-add-reaction-0 > [class*=iconContainer]{
+    background-color:var(--text-muted);
+    -webkit-mask-image:url(https://martinz64.github.io/remove-nitro/icons/reaction.svg);
+    mask-image:url(https://martinz64.github.io/remove-nitro/icons/reaction.svg);
+}
+#message-add-reaction-0[class*=focused] > [class*=iconContainer]:has([class*=caret]){
+    background-color:var(--white-500);
+}
+
+[role="menu"]#message [class*=scroller] [role=group]:nth-child(2)::before{
+    grid-column: 2/3;
+    content: "";
+    background-color:var(--background-secondary);
+    -webkit-mask-image:url(https://martinz64.github.io/remove-nitro/icons/edit.svg);
+    mask-image:url(https://martinz64.github.io/remove-nitro/icons/edit.svg);
+    -webkit-mask-position: 50% 50%;
+    mask-position: 50% 50%;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 18px 18px;
+    mask-size: 18px 18px;
+}
+
+[role="menu"]#message [class*=scroller] [role=group]:nth-child(2):not(:has(#message-reply))::after{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    content: "";
+    background-color:var(--background-secondary);
+    -webkit-mask-image:url(https://martinz64.github.io/remove-nitro/icons/reply.svg);
+    mask-image:url(https://martinz64.github.io/remove-nitro/icons/reply.svg);
+    -webkit-mask-position: 50% 50%;
+    mask-position: 50% 50%;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 18px 18px;
+    mask-size: 18px 18px;
+}
+
+[role="menu"]#message [class*=scroller]{
+    display: grid;
+}
+/*all other icons*/
+
+[role="menu"]#message :is(#message-pin, #message-mark-unread, #message-copy-link, #message-delete) [class*=label]{
+    display: none;
+}
+[role="menu"]#message :is(#message-pin, #message-mark-unread, #message-copy-link, #message-delete){
+    grid-area: 1;
+    grid-row-start: 2;
+}
+[role="menu"]#message [role="group"]:has(:is(#message-pin, #message-mark-unread, #message-copy-link, #message-delete)){
+    display: grid;
+}
+
+
+
+
+/*Image menu*/
+
+:is(#message-copy-image, #message-save-image) [class*=label]{
+    display: none;
+}
+
+[role="menu"]#message [role=group]:has(#message-save-image){
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-bottom: 4px;
+    border-bottom: 1px solid var(--background-modifier-accent);
+
+    border: 1px solid var(--background-modifier-accent);
+    border-radius: 4px;
+    padding: 0px 4px 0px 4px;
+}
+
+[role="menu"]#message [role=group]:has(#message-save-image)::before{
+    content: "";
+    background-color:var(--text-muted);
+    -webkit-mask-image:url(https://martinz64.github.io/remove-nitro/icons/image2.svg);
+    mask-image:url(https://martinz64.github.io/remove-nitro/icons/image2.svg);
+    -webkit-mask-position: 50% 50%;
+    mask-position: 50% 50%;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 18px 18px;
+    mask-size: 18px 18px;
+}
+
+:is(#message-copy-image, #message-save-image){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+:is(#message-save-image,#message-copy-image)::before{
+    content: "";
+    background-color:var(--text-muted);
+    -webkit-mask-position: 50% 50%;
+    mask-position: 50% 50%;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 18px 18px;
+    mask-size: 18px 18px;
+    height: 18px;
+    width: 18px;
+}
+:is(#message-save-image,#message-copy-image)[class*=focused]::before{
+    background-color: var(--white-500);
+}
+#message-save-image{
+    grid-column: 3;
+    grid-row: 1;
+}
+#message-save-image::before{
+    -webkit-mask-image:url(https://martinz64.github.io/remove-nitro/icons/save.svg);
+    mask-image:url(https://martinz64.github.io/remove-nitro/icons/save.svg);
+}
+
+#message-copy-image{
+    grid-column: 4;
+}
+#message-copy-image::before{
+    -webkit-mask-image:url(https://martinz64.github.io/remove-nitro/icons/copy.svg);
+    mask-image:url(https://martinz64.github.io/remove-nitro/icons/copy.svg);
+}
+
+#message-copy-native-link[class*=focused]::before, #message-open-native-link[class*=focused]::before{
+    background-color: var(--white-500);
+}
+
+
+/*link menu*/
+
+:is(#message-copy-native-link, #message-open-native-link) [class*=label]{
+    display: none;
+}
+
+[role="menu"]#message [role=group]:has(#message-open-native-link){
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-bottom: 4px;
+    border-bottom: 1px solid var(--background-modifier-accent);
+
+    border: 1px solid var(--background-modifier-accent);
+    border-radius: 4px;
+    padding: 0px 4px 0px 4px;
+}
+
+/* if we have both an image and link options, make sure they're not fucked*/
+[role="menu"]#message:has(#message-save-image) [role=group]:has(#message-open-native-link){
+    grid-row: 3;
+}
+
+
+[role="menu"]#message [role=group]:has(#message-open-native-link)::before{
+    content: "";
+    background-color:var(--text-muted);
+    -webkit-mask-image:url(https://martinz64.github.io/remove-nitro/icons/link.svg);
+    mask-image:url(https://martinz64.github.io/remove-nitro/icons/link.svg);
+    -webkit-mask-position: 50% 50%;
+    mask-position: 50% 50%;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 18px 18px;
+    mask-size: 18px 18px;
+}
+
+:is(#message-copy-native-link, #message-open-native-link){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+:is(#message-copy-native-link,#message-open-native-link)::before{
+    content: "";
+    background-color:var(--text-muted);
+    -webkit-mask-position: 50% 50%;
+    mask-position: 50% 50%;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 18px 18px;
+    mask-size: 18px 18px;
+    height: 18px;
+    width: 18px;
+}
+:is(#message-copy-native-link,#message-open-native-link)[class*=focused]::before{
+    background-color: var(--white-500);
+}
+#message-open-native-link{
+    grid-column: 3;
+    grid-row: 1;
+}
+#message-open-native-link::before{
+    -webkit-mask-image:url(https://martinz64.github.io/remove-nitro/icons/reply.svg);
+    mask-image:url(https://martinz64.github.io/remove-nitro/icons/reply.svg);
+}
+
+#message-copy-native-link{
+    grid-column: 4;
+}
+#message-copy-native-link::before{
+    -webkit-mask-image:url(https://martinz64.github.io/remove-nitro/icons/copy.svg);
+    mask-image:url(https://martinz64.github.io/remove-nitro/icons/copy.svg);
+}
+
+
