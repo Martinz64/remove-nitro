@@ -1,6 +1,8 @@
 /* Remove avatar decoration */
 [class*="avatarDecoration-"],
 [class*="avatarDecorationHint-"],
-[class*="bannerSVGWrapper-"] > mask > :not(circle):not(rect){
+[class*="bannerSVGWrapper-"] > mask > :not(circle):not(rect),
+#user-settings-change-avatar-change-avatar-decoration /*remove the option from avatar thing*/
+{
 	display: none !important;
 }
