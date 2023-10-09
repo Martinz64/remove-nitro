@@ -14,7 +14,8 @@ Based on a snippet i found on the vencord server
 [class^="customizationSection-"][class*="disabled-"], /* Per server profile customizations*/
 [class*="bannerNitroUpsell-"], /* "Unlock Banner" in profile editor*/
 [class^="imageUploaderHint-"], /* Remove gif option from profile pic upload option*/
-[class^="imagePickerContainer-"] > [class^="optionBox-"]:nth-child(2) /* Remove gif option from profile pic upload option*/
+[class^="imagePickerContainer-"] > [class^="optionBox-"]:nth-child(2), /* Remove gif option from profile pic upload option*/
+[class*=premiumFeatureBannerBackground-] /* remove the avatar decorations banner in the profile tab */
 {
     display: none !important;
 }
