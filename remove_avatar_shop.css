@@ -1,0 +1,4 @@
+li[role="listitem"] div[class*="linkButton-"] [href="/shop"],
+[class*="premiumFeatureBannerBackground-"][class*="collectiblesBanner-3eeMZW"] {
+    display: none;
+}
