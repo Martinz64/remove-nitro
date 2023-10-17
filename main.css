@@ -51,3 +51,13 @@ Based on a snippet i found on the vencord server
 [class^=limitedFeatureBorder] {
 	display: none;
 }
+
+/* Custom app icon preview sidebar and appearance section */
+.editor-1m9XtV, .selectionGroup-1uE1O_ {
+	display: none;
+}
+
+/* Nitro app color appearance section */
+.premiumFeatureBorder-1i95si, .background-yH6t2p {
+	display: none;
+}
