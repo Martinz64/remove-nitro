@@ -3,18 +3,18 @@ Nitro upsell remover
 Based on a snippet i found on the vencord server
 */
 
-[class^="channel-"] > div > [href="/store"], /* Nitro Button above DM List */
-[class^="channelTextArea"] [class^="buttons-"] > button, /* Gift Button */
-[class^="upsellVisible-"], /* Banner Nitro Upsell Header in the user modal */
+[class^="channel_"] > div > [href="/store"], /* Nitro Button above DM List */
+[class^="channelTextArea"] [class^="buttons_"] > button, /* Gift Button */
+[class^="upsellVisible_"], /* Banner Nitro Upsell Header in the user modal */
 [class^="premiumIconWrapper"], /* Nitro Icon in top right on Banners */
-[class^="characterCount-"] [class*="upsell-"], /* "Send longer Messages with Discord Nitro!" */
-[class^="emojiSection-"] [class*="shinyButton-"], /* "Get Nitro" button in Emoji/Sticker modal" */
-[class*="tryItOutSection-"], /*try nitro banner section on profile editor*/
-[class^="customizationSection-"] + [class^="upsellContainer-"], /* Per server profile customizations*/
-[class^="customizationSection-"][class*="disabled-"], /* Per server profile customizations*/
-[class*="bannerNitroUpsell-"], /* "Unlock Banner" in profile editor*/
-[class^="imageUploaderHint-"], /* Remove gif option from profile pic upload option*/
-[class^="imagePickerContainer-"] > [class^="optionBox-"]:nth-child(2), /* Remove gif option from profile pic upload option*/
+[class^="characterCount_"] [class*="upsell_"], /* "Send longer Messages with Discord Nitro!" */
+[class^="emojiSection_"] [class*="shinyButton_"], /* "Get Nitro" button in Emoji/Sticker modal" */
+[class*="tryItOutSection_"], /*try nitro banner section on profile editor*/
+[class^="customizationSection_"] + [class^="upsellContainer_"], /* Per server profile customizations*/
+[class^="customizationSection_"][class*="disabled_"], /* Per server profile customizations*/
+[class*="bannerNitroUpsell_"], /* "Unlock Banner" in profile editor*/
+[class^="imageUploaderHint_"], /* Remove gif option from profile pic upload option*/
+[class^="imagePickerContainer_"] > [class^="optionBox_"]:nth-child(2), /* Remove gif option from profile pic upload option*/
 [class*=premiumFeatureBannerBackground-], /* remove the avatar decorations banner in the profile tab */
 [class*=popoutContainer-] > [class*=container]:has([class*=collectiblesList]), /*remove avatar decorations upsell when opening profile*/
 [class*=tryingOutAvatarDecoration]
@@ -24,9 +24,9 @@ Based on a snippet i found on the vencord server
 
 /*Extra stuff i added*/
 /*Settings*/
-[class^="premiumTab-"], /*remove nitro tab*/
-[class^="premiumTab-"] + [class^="item-"], /*Server boost tab*/
-[class^="premiumTab-"] + [class^="item-"] + [class^="item-"] /*server boost tab*/
+[class^="premiumTab_"], /*remove nitro tab*/
+[class^="premiumTab_"] + [class^="item_"], /*Server boost tab*/
+[class^="premiumTab_"] + [class^="item_"] + [class^="item_"] /*server boost tab*/
 {
 	display: none !important;
 }

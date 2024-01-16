@@ -1,4 +1,4 @@
-li[role="listitem"] div[class*="linkButton-"] [href="/shop"],
-[class*="premiumFeatureBannerBackground-"][class*="collectiblesBanner-3eeMZW"] {
+li[role="listitem"] div[class*="linkButton_"] [href="/shop"],
+[class*="premiumFeatureBannerBackground_"][class*="collectiblesBanner_"] {
     display: none;
 }
