@@ -1,5 +1,5 @@
 /*Better sessions*/
-[class*="session-"]{
+[class*="session_"]{
 	--icon-size: 1rem;
 	background-color: var(--background-secondary);
     border-radius: 8px;
@@ -16,14 +16,14 @@
     align-items: stretch;
 }
 
-[class*="sessions-"] > div > [class*="children-"]{
+[class*="sessions_"] > div > [class*="children_"]{
 	display: flex;
 	flex-wrap: wrap;
     flex-direction: row;
     width: 120%;
 }
 
-[class*="sessionIcon-"] {
+[class*="sessionIcon_"] {
 	position: absolute;
     color: var(--interactive-normal);
     background: transparent;
@@ -36,12 +36,12 @@
 }
 
 /*Location icon*/
-[class*="sessionInfo-"] > :last-child > span:nth-child(1){
+[class*="sessionInfo_"] > :last-child > span:nth-child(1){
 	display: flex;
 	gap: 4px;
 }
 
-[class*="sessionInfo-"] > :last-child > span:nth-child(1)::before{
+[class*="sessionInfo_"] > :last-child > span:nth-child(1)::before{
 	content:"";
 	height: var(--icon-size);
 	width: var(--icon-size);
@@ -52,12 +52,12 @@
 }
 
 /*Time icon*/
-[class*="sessionInfo-"] > :last-child > span:last-child:not(:only-child){
+[class*="sessionInfo_"] > :last-child > span:last-child:not(:only-child){
 	display: flex;
 	gap: 4px;
 }
 
-[class*="sessionInfo-"] > :last-child > span:last-child:not(:only-child)::before{
+[class*="sessionInfo_"] > :last-child > span:last-child:not(:only-child)::before{
 	content:"";
 	height: var(--icon-size);
 	width: var(--icon-size);
@@ -68,35 +68,35 @@
 }
 
 /*Hide middle dot*/
-[class*="sessionInfo-"] > :last-child > span:not(:last-child):not(:first-child){
+[class*="sessionInfo_"] > :last-child > span:not(:last-child):not(:first-child){
 	display: none;
 }
 
-[class*="sessionInfo-"] > :last-child{
+[class*="sessionInfo_"] > :last-child{
 	display: flex;
 	flex-direction: column;
 }
 
 
 
-[class*="sessionInfo-"] > div:nth-child(1)::before{
+[class*="sessionInfo_"] > div:nth-child(1)::before{
 	content:"";
 	padding-left:1rem;
 }
 
-[class*="sessionIcon-"] > svg{
+[class*="sessionIcon_"] > svg{
 	height:  var(--icon-size);
 }
 
 /*Fix cross icon being too big*/
-[class*="session-"] [class*="sessionMoreButton-"] {
+[class*="session_"] [class*="sessionMoreButton_"] {
     width: 18px;
     height: 18px;
     overflow: hidden;
     transform: translateX(4px);
 }
 
-[class*="session-"] [class*="sessionMoreButton-"] svg {
+[class*="session_"] [class*="sessionMoreButton_"] svg {
     width: 18px;
     height: 18px;
     overflow: hidden;

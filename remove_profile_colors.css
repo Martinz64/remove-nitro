@@ -1,5 +1,5 @@
 /*Remove profile themes*/
-[class*="profileColors-"]{
+[class*="profileColors_"]{
     --profile-gradient-primary-color: var(--background-secondary-alt) !important;
     --profile-gradient-secondary-color: var(--background-secondary-alt) !important;
     --profile-gradient-overlay-color: transparent  !important;

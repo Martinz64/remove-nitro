@@ -1,10 +1,10 @@
-[class*=muted-] [class*=avatar-]{
+[class*=muted_] [class*=avatar_]{
     opacity: 1;
 }
-[class*=muted-][class*=layout-]{
+[class*=muted_][class*=layout_]{
     color:unset;
 }
-[class*=muted-][class*=layout-]:before{
+[class*=muted_][class*=layout_]:before{
     content: "";
     height: 1rem;
     width: 1rem;

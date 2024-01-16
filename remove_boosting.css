@@ -1,6 +1,6 @@
-[class^="flowerStarContainer-"], /*Boosted server icon*/
-#guild-header-popout > [class*="scroller-"] > div[role="group"]:first-child, /*boosting option in context menu*/
-#guild-header-popout > [class*="scroller-"] > div[role="separator"]:nth-child(2) 
+[class^="flowerStarContainer_"], /*Boosted server icon*/
+#guild-header-popout > [class*="scroller_"] > div[role="group"]:first-child, /*boosting option in context menu*/
+#guild-header-popout > [class*="scroller_"] > div[role="separator"]:nth-child(2) 
 {
 	display: none !important;
 }
