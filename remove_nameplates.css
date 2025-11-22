@@ -1,0 +1,10 @@
+[class*="member__"] {
+    & > [class*="childContainer__"] {
+        -webkit-padding-end: 8px;
+        padding-inline-end: 8px;
+    }
+
+    [class*="container__"][style*="background"] {
+        display: none;
+    }
+}
